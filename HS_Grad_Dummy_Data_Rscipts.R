@@ -26,3 +26,5 @@ VA_FIPS <- VA_FIPS %>% mutate(County_FIPS = str_pad(
                                 as.character(County_FIPS),3,pad="0"))
 
 HSgrads <- merge(HSgrads, VA_FIPS, by = "County_FIPS")
+
+write.csv(HSgrads, "C:/Users/cdavi/OneDrive/Desktop/Documents/R_Projects/mock_HSgrads/HSgrads.csv",row.names = FALSE)
