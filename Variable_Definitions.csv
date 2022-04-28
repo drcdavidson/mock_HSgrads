@@ -1,5 +1,5 @@
 ﻿Variable,Definition
-ID ,10 Digit Number
+ID ,7 Digit Number
 Gender,"1=Male, 2=Female"
 Race,"1=White, 2=African American, 3=Latino/Hispanic, 4=Other"
 ACT_Score,1 to 36 (Average is 20)
