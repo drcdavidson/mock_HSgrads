@@ -1,23 +1,23 @@
 ---
-title: "Creating a Student-Level Dataset for 25K Graduating High School Seniors For Analysis in R & Tableau "
+title: "Creating a Student-Level Dataset for 25K Graduating High School Seniors For Analysis in R & Tableau"
 output: html_notebook
 ---
 
-# Introduction
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook documenting the creation of a ***mock*** student-level data set of 25,000 Virginia graduating high school seniors for analysis in R and Tableau. 
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook documenting the creation of a ***mock*** student-level data set of 25,000 Virginia graduating high school seniors for analysis in R and Tableau.
 
-The dataset consist of the following variables: 
+The dataset consist of the following variables:
 
-```{r Create Dataset, echo=FALSE, message=FALSE, warning=FALSE}
+```{r Create Dataset Variable Definitions, echo=FALSE, message=FALSE, warning=FALSE}
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
 if(!require(data.table)) install.packages("data.table", repos = "http://cran.us.r-project.org")
+if(!require(kableExtra)) install.packages("kable", repos = "http://cran.us.r-project.org")
 
+Definitions <- read.csv("https://raw.githubusercontent.com/drcdavidson/mock_HSgrads/main/Variable_Definitions.csv")
 
-
+#Create Table with variables and definitions
+kable(Definitions, booktabs=T) %>%
+  kable_styling(latex_options = c("striped", "hold_position"), full_width = F) %>%
+  column_spec(2, width = "30em")
 ```
-
-
-
-
 
 
