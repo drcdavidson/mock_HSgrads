@@ -1,0 +1,129 @@
+﻿County_FIPS,County_Name
+001,Accomack
+003,Albemarle
+005,Alleghany
+007,Amelia
+009,Amherst
+011,Appomattox
+013,Arlington
+015,Augusta
+017,Bath
+019,Bedford
+021,Bland
+023,Botetourt
+025,Brunswick
+027,Buchanan
+029,Buckingham
+031,Campbell
+033,Caroline
+035,Carroll
+036,Charles City
+037,Charlotte
+041,Chesterfield
+043,Clarke
+045,Craig
+047,Culpeper
+049,Cumberland
+051,Dickenson
+053,Dinwiddie
+057,Essex
+059,Fairfax
+061,Fauquier
+063,Floyd
+065,Fluvanna
+067,Franklin
+069,Frederick
+071,Giles
+073,Gloucester
+075,Goochland
+077,Grayson
+079,Greene
+081,Greensville
+083,Halifax
+085,Hanover
+087,Henrico
+089,Henry
+091,Highland
+093,Isle of Wight
+095,James City
+097,King and Queen
+099,King George
+101,King William
+103,Lancaster
+105,Lee
+107,Loudoun
+109,Louisa
+111,Lunenburg
+113,Madison
+115,Mathews
+117,Mecklenburg
+119,Middlesex
+121,Montgomery
+125,Nelson
+127,New Kent
+131,Northampton
+133,Northumberland
+135,Nottoway
+137,Orange
+139,Page
+141,Patrick
+143,Pittsylvania
+145,Powhatan
+147,Prince Edward
+149,Prince George
+153,Prince William
+155,Pulaski
+157,Rappahannock
+159,Richmond
+161,Roanoke
+163,Rockbridge
+165,Rockingham
+167,Russell
+169,Scott
+171,Shenandoah
+173,Smyth
+175,Southampton
+177,Spotsylvania
+179,Stafford
+181,Surry
+183,Sussex
+185,Tazewell
+187,Warren
+191,Washington
+193,Westmoreland
+195,Wise
+197,Wythe
+199,York
+510,Alexandria City
+520,Bristol City
+530,Buena Vista City
+540,Charlottesville City
+550,Chesapeake City
+570,Colonial Heights City
+590,Danville City
+610,Falls Church City
+620,Franklin City
+630,Fredericksburg City
+640,Galax City
+650,Hampton City
+660,Harrisonburg City
+670,Hopewell City
+680,Lynchburg City
+683,Manassas City
+690,Martinsville City
+700,Newport News City
+710,Norfolk City
+720,Norton City
+730,Petersburg City
+735,Poquoson City
+740,Portsmouth City
+750,Radford City
+760,Richmond City
+770,Roanoke City
+775,Salem City
+790,Staunton City
+800,Suffolk City
+810,Virginia Beach City
+820,Waynesboro City
+830,Williamsburg City
+840,Winchester City
