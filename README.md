@@ -9,7 +9,7 @@ The dataset consist of the following variables:
 | Race         | 1=White, 2=African American, 3=Latino/Hispanic, 4=Other |
 | ACT_Score    | 1 to 36 (Average is 20)                                 |
 
-| HS_GPA       | Up to 4.0\                                              |
+| HS_GPA       | Up to 4.0                                          |
 |              | (Higher the ACT Score, Higher GPA)                      |
 | County_FIPS  | Virginia County FIPS Code                               |
 | County_Name  | Virginia County Name                                    |
