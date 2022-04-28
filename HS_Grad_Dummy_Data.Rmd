@@ -1,0 +1,8 @@
+---
+title: "Creating a Student-Level Dataset for 25K Graduating High School Seniors For Analysis in R & Tableau "
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook documenting the creation of a **mock** student-level data set of 25,000 Virginia graduating high school seniors for analysis in R and Tableau. 
+
+
