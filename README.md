@@ -7,10 +7,8 @@ The dataset consist of the following variables:
 | ID           | 7 Digit Number                                          |
 | Gender       | 1=Male, 2=Female                                        |
 | Race         | 1=White, 2=African American, 3=Latino/Hispanic, 4=Other |
-| ACT_Score    | 1 to 36 (Average is 20)                                 |
-
-| HS_GPA       | Up to 4.0\                                              |
-|              | (Higher the ACT Score, Higher GPA)                      |
+| ACT_Score    | 1 to 36                               |
+| HS_GPA       | Up to 4.0                    |
 | County_FIPS  | Virginia County FIPS Code                               |
 | County_Name  | Virginia County Name                                    |
 | HS_Type      | 1=Public, 2=Private, 3=Home School                      |
