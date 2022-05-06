@@ -53,5 +53,3 @@ HSgrads <- HSgrads[-c(14,15)]
 #Save HSgrads as CSV for Tableau
 write.csv(HSgrads, "C:/Users/cdavi/OneDrive/Desktop/Documents/R_Projects/mock_HSgrads/HSgrads.csv",row.names = FALSE)
 
-
-
