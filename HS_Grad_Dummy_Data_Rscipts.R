@@ -15,20 +15,37 @@ PellElig <- sample(c(1:2), 2.5e4, replace=TRUE, prob=c(.35,.65))
 
 GPA <- seq(from=1.75, to=4, by=.01)
 HS_GPA <- sample(GPA, 2.5e4, replace=TRUE)  
+rm(GPA)
 
-#Import ACS Undergraduate Percentages & Create Random County_FIPS
+#Import ACS Undergraduate Percentages 
 ACS <- read.csv("https://raw.githubusercontent.com/drcdavidson/mock_HSgrads/main/ACS_Percent.csv")
-County_FIPS <- sample(ACS$County_FIPS, 2.5e4, replace=TRUE, 
-                      prob=c(ACS$Perc_UG_Total))
-County_FIPS <- str_pad(County_FIPS, 3, pad = "0")
+ACS[1] <- str_pad(ACS$County_FIPS, 3, pad = "0")
+
+
+#Create Random County_FIPS Proportional to ACS
+County_UG <- tibble(County = rep(c(ACS$County_Name),ACS$UG.Population),
+               Value = runif(488799))
+
+County_UG_Sample <- County_UG %>% 
+  group_by(County) %>%
+  sample_frac(25000/488799)
+
+#Delete 3 Random Rows for County
+County_UG_Sample <- County_UG_Sample[-sample(1:nrow(County_UG_Sample), 3), ]
+
+#Remove unneeded file
+rm(County_UG)
 
 #Create MOCK HSgrads Dataframe
 HSgrads <- data.frame(ID,Gender,Race,ACT_Score,HS_GPA,
                       HS_Type,College_Type, PostHS_Plan,FirstGen,
-                      PellElig,County_FIPS)
+                      PellElig,County_UG_Sample$County)
+
+#Rename County_Name Column
+names(HSgrads)[11] <- 'County_Name'
 
 #Merge County_Names with FIPS
-HSgrads <- merge(HSgrads,ACS,by="County_FIPS")
+HSgrads <- merge(HSgrads,ACS,by="County_Name")
 
 #Delete Unneeded Columns in HSgrads
 HSgrads <- HSgrads[-c(14,15)]
